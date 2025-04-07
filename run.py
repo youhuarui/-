@@ -1,7 +1,9 @@
 from flask import Flask
 from routes import bp
 
-app = Flask(__name__)
+import os
+template_folder = os.path.abspath(os.path.dirname(__file__))
+app = Flask(__name__, template_folder=template_folder)
 app.register_blueprint(bp)
 
 if __name__ == "__main__":
