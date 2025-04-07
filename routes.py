@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request, jsonify
-from app.voyage_simulator import (
+from voyage_simulator import (
     simulate_voyage_segment, simulate_multi_segment_voyage, 
     simulate_batch_voyages, PORTS
 )
